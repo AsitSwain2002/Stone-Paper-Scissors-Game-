@@ -1,24 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: url(img/photo-1704895390342-b52a2f45786c.avif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
-.container{
+
+.container {
     height: 52vh;
     width: 40vw;
     border: 1px solid red;
     margin: auto;
-    transform: translate(-10%,45%);
-    background: linear-gradient(to top right,rgb(199, 122, 232),rgb(139, 159, 218),rgb(126, 233, 240));
+    transform: translate(-10%, 45%);
+    background: linear-gradient(to top right, rgb(199, 122, 232), rgb(139, 159, 218), rgb(126, 233, 240));
     border-radius: 40px;
 }
-.subContainer{
+
+.subContainer {
     height: 50%;
     width: 100%;
     margin-top: 20px;
@@ -26,7 +29,8 @@ body{
     align-items: center;
     justify-content: center;
 }
-.rock{
+
+.rock {
     height: 100%;
     width: 30%;
     display: flex;
@@ -34,11 +38,13 @@ body{
     justify-content: center;
     border-radius: 50%;
 }
-.rock:hover{
+
+.rock:hover {
     border: 4px solid black;
     cursor: pointer;
 }
-.paper{
+
+.paper {
     height: 100%;
     width: 30%;
     display: flex;
@@ -48,11 +54,13 @@ body{
     margin: 0 30px;
     cursor: pointer;
 }
-.paper:hover{
+
+.paper:hover {
     border: 4px solid rgb(209, 31, 31);
     cursor: pointer;
 }
-.scissors{
+
+.scissors {
     height: 100%;
     width: 30%;
     display: flex;
@@ -61,37 +69,44 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
-.scissors:hover{
+
+.scissors:hover {
     border: 4px solid rgb(94, 238, 11);
     cursor: pointer;
 }
-.rock img ,.paper img ,.scissors img{
+
+.rock img,
+.paper img,
+.scissors img {
     height: 80%;
     width: 80%;
     border-radius: 50px;
 }
 
-.mainCount{
+.mainCount {
     width: 100%;
     height: 20%;
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.count{
+
+.count {
     height: 100%;
     width: 25%;
     display: flex;
     justify-content: space-around;
 }
-.count1{
+
+.count1 {
     height: 100%;
     width: 60px;
     border: 1px solid black;
 }
-.count1In1{
+
+.count1In1 {
     height: 60%;
     width: 100%;
     display: flex;
@@ -99,7 +114,8 @@ body{
     justify-content: center;
     font-size: 3rem;
 }
-.count1In2{
+
+.count1In2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,12 +123,13 @@ body{
     height: 40%;
 }
 
-.count2{
+.count2 {
     height: 100%;
     width: 60px;
     border: 1px solid black;
 }
-.count2In1{
+
+.count2In1 {
     height: 60%;
     width: 100%;
     display: flex;
@@ -120,14 +137,16 @@ body{
     justify-content: center;
     font-size: 3rem;
 }
-.count2In2{
+
+.count2In2 {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(236, 223, 159);
     height: 40%;
 }
-.result{
+
+.result {
     height: 11%;
     width: 60%;
     margin: auto;
@@ -142,4 +161,58 @@ body{
     justify-content: center;
     border-radius: 20px;
     margin-top: 30px;
+}
+
+
+@media (max-width:600px) {
+    body{
+        overflow: hidden;
+    }
+    .container {
+        width: 95vw;
+        margin: auto;
+        margin-left: 40px;
+    }
+
+    .subContainer {
+        height: 50%;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rock .paper .scissors {
+        /* height: 100%; */
+        /* width: 50%; */
+        border-radius: 50%;
+        margin: 0 30px;
+        cursor: pointer;
+    }
+    .rock:hover{
+        border: none;
+    }
+    .paper:hover {
+        border: none;
+    }
+    .scissors:hover{
+        border: none;
+    }
+
+    .rock img,
+    .paper img,
+    .scissors img {
+        /* height: 50%;
+        width: 100%; */
+        height: 80px;
+        width: 80px;
+
+    }
+    .count {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
